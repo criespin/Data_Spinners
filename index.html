@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Spinners</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #0a1620 0%, #1a2a3a 35%, #11998e 65%, #38ef7d 100%);
+            min-height: 100vh;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .title {
+            font-size: 5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #11998e 10%, #38ef7d 40%, #43cea2 70%, #2c5364 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 24px rgba(17, 153, 142, 0.5), 0 2px 12px rgba(0,0,0,0.35);
+            animation: titleGlow 2.5s ease-in-out infinite alternate;
+        }
+        @keyframes titleGlow {
+            0% {
+                filter: brightness(1) drop-shadow(0 0 10px #ffd20088);
+            }
+            100% {
+                filter: brightness(1.25) drop-shadow(0 0 30px #ffd200cc);
+            }
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            color: #fff;
+            opacity: 0.9;
+        }
+        .data-animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .spinner {
+            width: 80px;
+            height: 80px;
+            border: 10px solid #38ef7d;
+            border-top: 10px solid #11998e;
+            border-radius: 50%;
+            animation: spin 1.2s linear infinite;
+            margin: 0 20px;
+        }
+        .bar {
+            width: 16px;
+            height: 60px;
+            background: linear-gradient(180deg, #11998e, #38ef7d);
+            margin: 0 10px;
+            border-radius: 8px;
+            animation: bounce 1s infinite alternate;
+        }
+        .bar:nth-child(2) { animation-delay: 0.2s; }
+        .bar:nth-child(3) { animation-delay: 0.4s; }
+        .bar:nth-child(4) { animation-delay: 0.6s; }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes bounce {
+            0% { height: 30px; }
+            100% { height: 60px; }
+        }
+        .sections {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        @media (max-width: 1100px) {
+            .sections {
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 900px) {
+            .sections {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .section-tile {
+            background: rgba(30,30,30,0.32);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(17, 153, 142, 0.13), 0 8px 32px 0 rgba(31, 38, 135, 0.27);
+            border: 2px solid #11998e44;
+            background: linear-gradient(120deg, rgba(30,30,30,0.32) 80%, #38ef7d22 100%);
+            width: 250px;
+            min-height: 180px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .section-tile:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 16px 40px 0 #38ef7d55, 0 16px 40px 0 rgba(31, 38, 135, 0.27);
+            border: 2px solid #38ef7d;
+        }
+        .section-title {
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffffff;
+            background: linear-gradient(90deg, #38ef7d 10%, #11998e 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 8px rgba(56,239,125,0.25), 0 2px 8px rgba(0,0,0,0.35);
+            border-bottom: none;
+        }
+        .section-content {
+            font-size: 1.05rem;
+            color: #eafcf7;
+            opacity: 1;
+            text-shadow: 0 1px 4px rgba(17,153,142,0.25), 0 1px 4px rgba(0,0,0,0.35);
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Data Spinners</div>
+        <div class="subtitle">One stop solution for all Data problems</div>
+        <div class="data-animation">
+            <div class="spinner"></div>
+            <div style="display: flex; align-items: flex-end;">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="sections">
+            <a class="section-tile" href="solution.html">
+                <div class="section-title">Solution</div>
+                <div class="section-content">AI-powered Smart Query and Data Fetching: Seamlessly retrieve, filter, and transform data using natural language queries, powered by OpenAI for intelligent data understanding.</div>
+            </a>
+            <a class="section-tile" href="architecture.html">
+                <div class="section-title">Architecture</div>
+                <div class="section-content">A robust cloud-native architecture integrating OpenAI APIs for smart query processing, secure data fetching, and scalable test data generation workflows.</div>
+            </a>
+            <a class="section-tile" href="tools.html">
+                <div class="section-title">Tools</div>
+                <div class="section-content">Unified platform for AI-driven query building, automated data fetching, and OpenAI-based test data generation. Includes prompt engineering, data validation, and export features.</div>
+            </a>
+            <a class="section-tile" href="benefits.html">
+                <div class="section-title">Benefits</div>
+                <div class="section-content">Accelerate development with smart data access, reduce manual effort, ensure high-quality test datasets, and empower teams with OpenAI-enhanced automation.</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
