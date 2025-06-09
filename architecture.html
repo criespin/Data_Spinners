@@ -12,6 +12,9 @@
         .home-icon { display: block; margin: 0 auto 30px auto; width: 48px; height: 48px; cursor: pointer; }
         .section-content { font-size: 1.2rem; color: #eafcf7; text-align: center; margin-top: 30px; opacity: 1; }
         a.home-link { display: block; width: 48px; margin: 0 auto; }
+        .section-card { background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-top: 20px; backdrop-filter: blur(10px); }
+        .section-card-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; color: #38ef7d; }
+        .section-card img { max-width: 100%; border-radius: 12px; box-shadow: 0 4px 24px #11998e33; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -23,7 +26,15 @@
             </svg>
         </a>
         <div class="title">Architecture</div>
-        <div class="section-content">AI-powered Smart Query and Data Fetching: Seamlessly retrieve, filter, and transform data using natural language queries, powered by OpenAI for intelligent data understanding.</div>
+        <div class="section-content">AI-powered Smart Query and Data Fetching: Seamlessly retrieve, filter, and transform data using natural language queries, powered by OpenAI GPT3.5-turbo.</div>
+        
+        <div class="section-card">
+           
+            <div class="section-content">
+                <img src="Architecture.jpg" alt="Architecture Diagram">
+                <div style="margin-top:10px; color:#eafcf7; font-size:1.05rem;">System architecture showing integration of OpenAI, Node.js backend, and PostgreSQL database.</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
