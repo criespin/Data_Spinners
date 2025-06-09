@@ -10,8 +10,34 @@
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
         .title { font-size: 3rem; font-weight: 700; letter-spacing: 2px; text-align: center; margin-top: 40px; margin-bottom: 10px; background: linear-gradient(90deg, #11998e 10%, #38ef7d 40%, #43cea2 70%, #2c5364 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 4px 24px rgba(17, 153, 142, 0.5), 0 2px 12px rgba(0,0,0,0.35); }
         .home-icon { display: block; margin: 0 auto 30px auto; width: 48px; height: 48px; cursor: pointer; }
-        .section-content { font-size: 1.2rem; color: #eafcf7; text-align: center; margin-top: 30px; opacity: 1; }
+        .section-card {
+            background: rgba(30,30,30,0.32);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(17, 153, 142, 0.13), 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            border: 2px solid #11998e44;
+            background: linear-gradient(120deg, rgba(30,30,30,0.32) 80%, #38ef7d22 100%);
+            padding: 32px 28px;
+            margin: 38px auto 0 auto;
+            max-width: 800px;
+            text-align: center;
+            transition: box-shadow 0.2s, border 0.2s;
+        }
+        .section-card:hover {
+            box-shadow: 0 16px 40px 0 #38ef7d33, 0 16px 40px 0 rgba(31, 38, 135, 0.18);
+            border: 2px solid #38ef7d;
+        }
+        .section-content { font-size: 1.2rem; color: #eafcf7; text-align: center; margin: 0; opacity: 1; }
         a.home-link { display: block; width: 48px; margin: 0 auto; }
+        .section-card ul { padding-left: 20px; }
+        .section-card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            background: linear-gradient(90deg,#38ef7d 10%,#11998e 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +49,39 @@
             </svg>
         </a>
         <div class="title">Benefits</div>
-        <div class="section-content">AI-powered Smart Query and Data Fetching: Seamlessly retrieve, filter, and transform data using natural language queries, powered by OpenAI for intelligent data understanding.</div>
+        <div class="section-card">
+            <div class="section-card-title">Natural Language Data Access</div>
+            <div class="section-content">Users can query the database and generate test data using plain English prompts, eliminating the need for SQL or programming knowledge. Reduces the learning curve for non-technical users and accelerates data-driven workflows for everyone.</div>
+        </div>
+        <div class="section-card">
+            <div class="section-card-title">Rapid Test Data Generation</div>
+            <div class="section-content">Instantly generate realistic, structured test data for development, QA, and demos using the "Smart Creation" mode. Saves significant time compared to manual data entry or writing scripts.</div>
+        </div>
+        
+        <div class="section-card">
+            <div class="section-card-title">Natural Language Data Query</div>
+            <div class="section-content">Empower users to fetch, filter, and transform data using simple natural language prompts, eliminating the need for complex SQL or scripting.</div>
+        </div>
+        <div class="section-card">
+            <div class="section-card-title">Accelerated Development</div>
+            <div class="section-content">Speed up development and QA cycles by providing on-demand data and test sets, enabling rapid prototyping and validation.</div>
+        </div>
+        <div class="section-card">
+            <div class="section-card-title">Improved Data Quality</div>
+            <div class="section-content">Ensure high-quality, context-aware test data that closely matches real-world scenarios, leading to more reliable application testing.</div>
+        </div>
+        <div class="section-card">
+            <div class="section-card-title">User-Friendly Interface</div>
+            <div class="section-content">Modern, intuitive UI lowers the barrier for both technical and non-technical users to work with data efficiently.</div>
+        </div>
+        <div class="section-card">
+            <div class="section-card-title">Seamless Integration</div>
+            <div class="section-content">Easily integrates with existing databases and workflows, supporting scalable, cloud-native deployments.</div>
+        </div>
+        <div class="section-card">
+            <div class="section-card-title">Enhanced Collaboration</div>
+            <div class="section-content">Teams can share queries, prompts, and generated datasets, fostering collaboration and knowledge sharing.</div>
+        </div>
     </div>
 </body>
 </html>

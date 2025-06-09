@@ -10,8 +10,38 @@
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
         .title { font-size: 3rem; font-weight: 700; letter-spacing: 2px; text-align: center; margin-top: 40px; margin-bottom: 10px; background: linear-gradient(90deg, #11998e 10%, #38ef7d 40%, #43cea2 70%, #2c5364 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 4px 24px rgba(17, 153, 142, 0.5), 0 2px 12px rgba(0,0,0,0.35); }
         .home-icon { display: block; margin: 0 auto 30px auto; width: 48px; height: 48px; cursor: pointer; }
-        .section-content { font-size: 1.2rem; color: #eafcf7; text-align: center; margin-top: 30px; opacity: 1; }
-        a.home-link { display: block; width: 48px; margin: 0 auto; }
+        .section-card {
+            background: rgba(30,30,30,0.32);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(17, 153, 142, 0.13), 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            border: 2px solid #11998e44;
+            background: linear-gradient(120deg, rgba(30,30,30,0.32) 80%, #38ef7d22 100%);
+            padding: 32px 28px;
+            margin: 38px auto 0 auto;
+            max-width: 800px;
+            text-align: center;
+            transition: box-shadow 0.2s, border 0.2s;
+        }
+        .section-card:hover {
+            box-shadow: 0 16px 40px 0 #38ef7d33, 0 16px 40px 0 rgba(31, 38, 135, 0.18);
+            border: 2px solid #38ef7d;
+        }
+        .section-content {
+            font-size: 1.2rem;
+            color: #eafcf7;
+            text-align: center;
+            margin: 0;
+            opacity: 1;
+        }
+        .section-card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            background: linear-gradient(90deg,#38ef7d 10%,#11998e 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -23,7 +53,22 @@
             </svg>
         </a>
         <div class="title">Solution</div>
-        <div class="section-content">AI-powered Smart Query and Data Fetching: Seamlessly retrieve, filter, and transform data using natural language queries, powered by OpenAI for intelligent data understanding.</div>
+        <div class="section-card">
+            <div class="section-card-title">Problem Statement</div>
+            <div class="section-content">Organizations often need to quickly fetch, analyze, and generate test data for their applications. Manual data entry and SQL writing are time-consuming and error-prone. There is a need for a user-friendly, AI-powered web application that allows both querying a database and generating realistic test data, all through natural language prompts.</div>
+        </div>
+        <div class="section-card">
+            <div class="section-card-title">Solution Overview</div>
+            <div class="section-content">
+                This solution delivers a vibrant, modern web application that enables users to:
+                <ul style="text-align:left; margin: 18px auto 18px 30px; max-width: 500px; color: #eafcf7; font-size: 1.13rem;">
+                    <li>Query a PostgreSQL database using natural language (with AI-generated SQL)</li>
+                    <li>Generate creative/test data in table format using OpenAI</li>
+                    <li>View results in a modern, responsive, ChatGPT-style UI</li>
+                </ul>
+                The solution is built with a Node.js backend, PostgreSQL database, OpenAI API integration, and a frontend using HTML, JavaScript, and CSS.
+            </div>
+        </div>
     </div>
 </body>
 </html>
