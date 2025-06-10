@@ -7,14 +7,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; font-family: 'Montserrat', Arial, sans-serif; background: linear-gradient(135deg, #0a1620 0%, #1a2a3a 35%, #11998e 65%, #38ef7d 100%); min-height: 100vh; color: #fff; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .title { font-size: 3rem; font-weight: 700; letter-spacing: 2px; text-align: center; margin-top: 40px; margin-bottom: 10px; background: linear-gradient(90deg, #11998e 10%, #38ef7d 40%, #43cea2 70%, #2c5364 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 4px 24px rgba(17, 153, 142, 0.5), 0 2px 12px rgba(0,0,0,0.35); }
+        .container { max-width: 1400px; min-width: 340px; margin: 0 auto; padding: 60px 40px; }
+        .title { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; letter-spacing: 2px; text-align: center; margin-top: 40px; margin-bottom: 10px; background: linear-gradient(90deg, #11998e 10%, #38ef7d 40%, #43cea2 70%, #2c5364 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 4px 24px rgba(17, 153, 142, 0.5), 0 2px 12px rgba(0,0,0,0.35); }
         .home-icon { display: block; margin: 0 auto 30px auto; width: 48px; height: 48px; cursor: pointer; }
-        .section-content { font-size: 1.2rem; color: #eafcf7; text-align: center; margin-top: 30px; opacity: 1; }
+        .section-content { font-size: clamp(1.1rem, 2vw, 1.3rem); color: #eafcf7; text-align: center; margin-top: 30px; opacity: 1; }
         a.home-link { display: block; width: 48px; margin: 0 auto; }
-        .section-card { background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-top: 20px; backdrop-filter: blur(10px); }
-        .section-card-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; color: #38ef7d; }
+        .section-card { max-width: 900px; min-width: 320px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 48px 40px; margin: 48px auto 0 auto; backdrop-filter: blur(10px); }
+        .section-card-title { font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 700; margin-bottom: 10px; color: #38ef7d; }
         .section-card img { max-width: 100%; border-radius: 12px; box-shadow: 0 4px 24px #11998e33; margin-bottom: 10px; }
+
+        @media (max-width: 900px) {
+            .container {
+                padding: 30px 10px;
+            }
+            .section-card {
+                padding: 24px 10px;
+                margin: 24px auto 0 auto;
+            }
+        }
     </style>
 </head>
 <body>
