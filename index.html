@@ -136,6 +136,21 @@
             text-shadow: none;
             border-bottom: none;
         }
+        .tools-icon-animated {
+            width: 48px;
+            height: 48px;
+            margin-left: 24px;
+            vertical-align: middle;
+            cursor: pointer;
+            fill: #38ef7d;
+            animation: spin-tool 2s linear infinite;
+        }
+        @keyframes spin-tool {
+            0% { transform: rotate(-20deg); }
+            10% { transform: rotate(0deg); }
+            90% { transform: rotate(0deg); }
+            100% { transform: rotate(20deg); }
+        }
     </style>
 </head>
 <body>
@@ -150,23 +165,30 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <a href="https://criespin.github.io/fetchgenai/" target="_blank" rel="noopener noreferrer" title="Go to FetchGen AI">
+                <svg class="tools-icon-animated" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M12 2a1 1 0 0 1 1 1v2.07a7.001 7.001 0 0 1 5.93 5.93H21a1 1 0 1 1 0 2h-2.07a7.001 7.001 0 0 1-5.93 5.93V21a1 1 0 1 1-2 0v-2.07a7.001 7.001 0 0 1-5.93-5.93H3a1 1 0 1 1 0-2h2.07a7.001 7.001 0 0 1 5.93-5.93V3a1 1 0 0 1 1-1zm0 4a5 5 0 1 0 0 10A5 5 0 0 0 12 6z"/>
+                    </g>
+                </svg>
+            </a>
         </div>
         <div class="sections">
             <a class="section-tile" href="solution.html">
                 <div class="section-title">Solution</div>
-                <div class="section-content">AI-powered Smart Query and Data Fetching: Seamlessly retrieve, filter, and transform data using natural language queries, powered by OpenAI for intelligent data understanding.</div>
+                <div class="section-content">AI-Powered Smart Query, Data Fetching, and Synthetic Test Data Generation using natural language queries, powered by OpenAI GPT-3.5-turbo.</div>
             </a>
             <a class="section-tile" href="architecture.html">
                 <div class="section-title">Architecture</div>
-                <div class="section-content">A robust cloud-native architecture integrating OpenAI APIs for smart query processing, secure data fetching, and scalable test data generation workflows.</div>
+                <div class="section-content">A robust architecture integrating OpenAI APIs for smart query processing, data fetching, and synthetic test data generation workflows.</div>
             </a>
-            <a class="section-tile" href="https://criespin.github.io/fetchgenai/" target="_blank" rel="noopener noreferrer">
-                <div class="section-title">Tools</div>
-                <div class="section-content">Unified platform for AI-driven query building, automated data fetching, and OpenAI-based test data generation. Includes prompt engineering, data validation, and export features.</div>
+            <a class="section-tile" href="usecases.html">
+                <div class="section-title">Use Cases</div>
+                <div class="section-content">Explore real-world scenarios: AI-powered data exploration, automated test data generation, rapid prototyping, and business reporting all with natural language.</div>
             </a>
             <a class="section-tile" href="benefits.html">
                 <div class="section-title">Benefits</div>
-                <div class="section-content">Accelerate development with smart data access, reduce manual effort, ensure high-quality test datasets, and empower teams with OpenAI-enhanced automation.</div>
+                <div class="section-content">Accelerate testing  with smart data access, reduce manual effort, ensure high-quality test datasets, and empower teams with OpenAI-enhanced automation.</div>
             </a>
         </div>
     </div>

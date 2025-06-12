@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Spinners - Solution</title>
+    <title>Data Spinners - Use Cases</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
     <style>
         body { margin: 0; font-family: 'Montserrat', Arial, sans-serif; background: #0a2014; min-height: 100vh; color: #fff; }
@@ -39,14 +39,6 @@
         .section-card:hover {
             box-shadow: 0 16px 40px 0 #38ef7d33, 0 16px 40px 0 rgba(31, 38, 135, 0.18);
             border: 2px solid #38ef7d;
-        }
-        .section-content {
-            font-size: clamp(1.1rem, 2vw, 1.3rem);
-            color: #eafcf7;
-            text-align: center;
-            margin: 0;
-            opacity: 1;
-            text-shadow: none;
         }
         .section-card-title {
             font-size: clamp(1.2rem, 2vw, 1.6rem);
@@ -95,20 +87,16 @@
                 <path d="M9 21V14H15V21" stroke="#11998e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
-        <div class="title">Solution</div>
+        <div class="title">Use Cases</div>
         <div class="section-card">
-            <div class="section-card-title">Problem Statement</div>
+            <div class="section-card-title">Use Cases</div>
             <ul class="problem-statement-list">
-                <li><strong>Manual data querying and test data generation are time-consuming and require technical expertise.</strong> <span class="problem-secondary">Many users lack SQL knowledge or programming skills, making it difficult to fetch, analyze, or generate realistic data for development and testing purposes.</span></li>
-                <li style="margin-top: 18px;"><strong>Existing tools lack a user-friendly, AI-powered interface for both database querying and synthetic data creation.</strong> <span class="problem-secondary">There is a need for a modern web application that allows users to interact with data using natural language prompts, reducing the barrier for non-technical users and accelerating data-driven workflows.</span></li>
-            </ul>
-        </div>
-        <div class="section-card">
-            <div class="section-card-title">Solution Overview</div>
-            <ul class="problem-statement-list">
-                <li><strong>This solution delivers a modern, user-friendly web application that leverages AI to simplify both database querying and synthetic data generation.</strong> <span class="problem-secondary">It enables users to interact with data using natural language, making advanced data tasks accessible to everyone.</span></li>
-                <li style="margin-top: 18px;"><strong>Key Features:</strong> <span class="problem-secondary">Smart Query a PostgreSQL database using natural language (with AI-generated SQL), generate synthetic test data based on database schema or custom patterns using OpenAI, and view results in a modern, responsive UI.</span></li>
-                <li style="margin-top: 18px;"><strong>Technology Stack:</strong> <span class="problem-secondary">Node.js backend, PostgreSQL database, OpenAI API integration (GPT-3.5 Turbo), and a frontend using HTML, JavaScript, and CSS.</span></li>
+                <li><strong>Data Exploration for Testers:</strong> <span class="problem-secondary">Testers can query and filter data from PostgreSQL using plain English, without writing SQL.</span></li>
+                <li style="margin-top: 18px;"><strong>Automated Test Data Generation:</strong> <span class="problem-secondary">Instantly create realistic datasets for development, QA, and demo environments using natural language prompts.</span></li>
+                <li style="margin-top: 18px;"><strong>Rapid Prototyping:</strong> <span class="problem-secondary">Developers can quickly generate and fetch data to test new features or validate application logic.</span></li>
+                <li style="margin-top: 18px;"><strong>Business Reporting:</strong> <span class="problem-secondary">Business users can ask questions about their data and get instant, AI-powered answers and summaries.</span></li>
+                <li style="margin-top: 18px;"><strong>Data masking:</strong> <span class="problem-secondary">Test data generation can be masked to protect privacy and comply with regulations.</span></li>
+            
             </ul>
         </div>
     </div>
